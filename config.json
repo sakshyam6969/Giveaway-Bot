@@ -1,6 +1,6 @@
 {
   "token": "BOT TOKEN", 
-  "prefix": "~",
+  "prefix": "Your Perfix",
   "everyoneMention": false,
   "hostedBy": true
 }
