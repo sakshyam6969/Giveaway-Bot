@@ -7,17 +7,17 @@ module.exports.run = async (client, message, args) => {
     if(!message.content.startsWith(prefix)) return;
 
     let help = new Discord.MessageEmbed()
-      .setAuthor("PĤÃŇtØM🥀")
+      .setAuthor("Giveaway Bot")
       .setTitle("Command List & Guide for the Bot")
       .setDescription("Below are Commands you can do with Bot, Right now there is only 6 commands available, more commands will be added soon.")
       .addField("🎁 Giveaway 🎁","~start [channel-name] [Time] [winners] [Prize]\nreroll [prize name]\nend [prize name]")
       .addField("Examples", "~start #giveaway 5m 1 Testing\n~end Testing\n~reroll Testing")
       .addField("Utility", "ping, invite", true)
       .addField("ℹ Information ℹ", "stats", true)
-      .addField("Check out", "[This Channel](https://www.youtube.com/channel/UCtxWom0HSeOnGqXLTgGopMw) to make your own giveaway bot")
+      .addField("Check out", "[This Channel](https://www.youtube.com/channel/UCCSxnxwMXQHTAIjVjaAg7CQ) to make your own giveaway bot")
       .setTimestamp()
       .setFooter(`Command Requested By ${message.author.tag}`, client.user.displayAvatarURL());
-    message.channel.send("**Sent the commands in Direct Messages! 💌, Check DMs**");
+    message.channel.send("**Sent the commands In Direct Messages! 💌, Check DMs**");
 
     return message.author.send(help);
 }
